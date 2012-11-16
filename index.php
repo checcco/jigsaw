@@ -209,7 +209,7 @@ $app_name = idx($app_info, 'name', '');
     </script>
 
     <header class="clearfix">
-			<h1><?php echo $facebook->getSignedRequest(); ?></h1>
+			<pre><?php print_r($facebook->getSignedRequest()); ?></pre>
       <?php if (isset($basic)) { ?>
       <p id="picture" style="background-image: url(https://graph.facebook.com/<?php echo he($user_id); ?>/picture?type=normal)"></p>
 
